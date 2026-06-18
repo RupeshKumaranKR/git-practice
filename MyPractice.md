@@ -133,3 +133,64 @@ Date:   Sun Jun 14 16:28:09 2026 +0530
     Initial commit: Added app.py
 
 D:\git-practice>
+
+Microsoft Windows [Version 10.0.26200.8655]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Rupesh>cd D:\
+
+C:\Users\Rupesh>D:
+
+D:\>git clone https://github.com/RupeshKumaranKR/test-repo.git
+Cloning into 'test-repo'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 17 (delta 4), reused 15 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (17/17), done.
+Resolving deltas: 100% (4/4), done.
+
+D:\> cd test-repo/
+
+D:\test-repo>git checkout -b nb
+Switched to a new branch 'nb'
+
+D:\test-repo>git branch
+  main
+* nb
+
+D:\test-repo>vim app.py
+'vim' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\test-repo>git status
+On branch nb
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   app.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\test-repo>git add app.py
+
+D:\test-repo>git commit -m "updated app.py"
+[nb 739ebed] updated app.py
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+D:\test-repo>git push --set-upstream origin nb
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nb' on GitHub by visiting:
+remote:      https://github.com/RupeshKumaranKR/test-repo/pull/new/nb
+remote:
+To https://github.com/RupeshKumaranKR/test-repo.git
+ * [new branch]      nb -> nb
+branch 'nb' set up to track 'origin/nb'.
+
+D:\test-repo>
